@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader Joe's Reusable Tote Bags | Shop Online</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a clean modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="tindaPNG.png?v=2" type="image/png">
+    <link rel="icon" href="tindaicon.ico?v=2" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <a class="logo" href="#" aria-label="TindaStates home">
+            <img class="logo-mark" src="tindaPNG.png" alt="" aria-hidden="true">
+            <span class="logo-wordmark">TINDASTATES</span>
+        </a>
+        <div class="sale-marquee" aria-label="Sale">
+            <span>SALE&nbsp; • &nbsp;SALE&nbsp; • &nbsp;SALE&nbsp; • &nbsp;SALE&nbsp; • &nbsp;SALE&nbsp; • &nbsp;SALE&nbsp; • &nbsp;</span>
+        </div>
+        <div class="header-actions">
+            <label class="search-container">
+                <svg class="search-icon" aria-hidden="true" viewBox="0 0 64 64" focusable="false">
+                    <circle cx="27" cy="27" r="18"></circle>
+                    <path d="m40 40 15 15"></path>
+                </svg>
+                <span class="sr-only">Search products</span>
+                <input id="product-search" type="search" placeholder="Search products" autocomplete="off">
+            </label>
+            <button class="cart-icon-container" type="button" onclick="toggleCartModal()" aria-label="Open cart">
+                <img class="cart-icon" src="1.ico" alt="" aria-hidden="true">
+                <span class="cart-label">Cart</span>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-marquee" aria-hidden="true">
+            <div class="hero-marquee-track">
+                <div class="hero-marquee-set">
+                    <img src="img/tj/miniviolet.png" alt="">
+                    <img src="img/tj/minipink.png" alt="">
+                    <img src="img/tj/miniblue.png" alt="">
+                    <img src="img/tj/largeviolet.png" alt="">
+                    <img src="img/tj/largeblue.png" alt="">
+                    <img src="img/mk/mkbeige.png" alt="">
+                </div>
+                <div class="hero-marquee-set">
+                    <img src="img/tj/miniviolet.png" alt="">
+                    <img src="img/tj/minipink.png" alt="">
+                    <img src="img/tj/miniblue.png" alt="">
+                    <img src="img/tj/largeviolet.png" alt="">
+                    <img src="img/tj/largeblue.png" alt="">
+                    <img src="img/mk/mkbeige.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="hero-content">
+        <p class="hero-eyebrow"> Welcome to TindaStates!</p>
+        <h1 class="love">LOVE, SHOP, SHIP, SMILE!</h1>
+        <a class="hero-description hero-facebook-link"
+           href="https://www.facebook.com/profile.php?id=61577091522099"
+           target="_blank"
+           rel="noopener noreferrer">Our Facebook Page</a>
+        </div>
+    </section>
+
+    <!-- Product Catalog Grid -->
+    <main class="container" id="products">
+        <div class="product-section-header">
+            <h2>Limited-Time Offers</h2>
+            <div class="carousel-controls" aria-label="Limited-time offers navigation">
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('offers-product-grid', -1)" aria-label="Previous offers">&lt;</button>
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('offers-product-grid', 1)" aria-label="Next offers">&gt;</button>
+            </div>
+        </div>
+        <div class="product-carousel">
+        <div class="product-grid" id="offers-product-grid">
+            <!-- Limited-time offers will be injected via JavaScript -->
+        </div>
+        </div>
+        <div class="product-section-header">
+            <h2>Trader Joe's Pastel Tote Bags</h2>
+            <div class="carousel-controls" aria-label="Trader Joe's products navigation">
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('product-grid', -1)" aria-label="Previous products">&lt;</button>
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('product-grid', 1)" aria-label="Next products">&gt;</button>
+            </div>
+        </div>
+        <div class="product-carousel">
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be injected via JavaScript -->
+        </div>
+        </div>
+        <div class="product-section-header product-group-heading">
+            <h2>MK Bags</h2>
+            <div class="carousel-controls" aria-label="MK products navigation">
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('mk-product-grid', -1)" aria-label="Previous products">&lt;</button>
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('mk-product-grid', 1)" aria-label="Next products">&gt;</button>
+            </div>
+        </div>
+        <div class="product-carousel">
+        <div class="product-grid" id="mk-product-grid">
+            <!-- MK products will be injected via JavaScript -->
+        </div>
+        </div>
+        <div class="product-section-header product-group-heading">
+            <h2>Kids' Backpack Collection</h2>
+            <div class="carousel-controls" aria-label="Kids' backpack products navigation">
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('kids-product-grid', -1)" aria-label="Previous products">&lt;</button>
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('kids-product-grid', 1)" aria-label="Next products">&gt;</button>
+            </div>
+        </div>
+        <div class="product-carousel">
+        <div class="product-grid" id="kids-product-grid">
+            <!-- Kids' backpack products will be injected via JavaScript -->
+        </div>
+        </div>
+    </main>
+
+    <!-- Shopping Cart Slide-out / Modal -->
+    <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Shopping Cart</h3>
+                <button class="close-btn" onclick="toggleCartModal()">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items-list">
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-container">
+                    <span>Total:</span>
+                    <span id="cart-total">₱0.00</span>
+                </div>
+                <p class="cart-shipping-note">Shipping fee depends on location and is not included in the total.</p>
+                <p class="checkout-instruction">Open a private chat with TindaStates. Review your order, then click Send.</p>
+                <button id="checkout-fb-btn" class="fb-checkout-btn" onclick="checkoutViaMessenger()" disabled>
+                    <span aria-hidden="true">💬</span> Message TindaStates
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TindaStates. Orders processed securely via Facebook Messenger.</p>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
