@@ -249,7 +249,7 @@ function addToCart(productId, button) {
         button.textContent = "Added to Cart!";
         button.classList.add("added");
         button.addedTimeout = setTimeout(() => {
-            button.textContent = "Add to Cart";
+            button.innerHTML = `<img src="1.ico" alt="Cart" style="width: 20px; height: 20px; vertical-align: middle;">`;
             button.classList.remove("added");
         }, 1200);
     }
