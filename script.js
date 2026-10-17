@@ -155,7 +155,39 @@ const products = [
 ];
 
 // Shopping Cart state array
-let cart = [];
+const CART_STORAGE_KEY = "tindastates-cart";
+
+function loadCart() {
+    try {
+        if (typeof window === "undefined" || !window.localStorage) {
+            return [];
+        }
+
+        const savedCart = window.localStorage.getItem(CART_STORAGE_KEY);
+        if (!savedCart) {
+            return [];
+        }
+
+        const parsedCart = JSON.parse(savedCart);
+        return Array.isArray(parsedCart) ? parsedCart : [];
+    } catch (error) {
+        return [];
+    }
+}
+
+function saveCart() {
+    try {
+        if (typeof window === "undefined" || !window.localStorage) {
+            return;
+        }
+
+        window.localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+    } catch (error) {
+        // Ignore storage errors so cart actions still work in-memory
+    }
+}
+
+let cart = loadCart();
 
 // Initialize website on load
 document.addEventListener("DOMContentLoaded", () => {
@@ -237,6 +269,7 @@ function addToCart(productId, button) {
         cart.push({ ...product, quantity: 1 });
     }
 
+    saveCart();
     updateCartUI();
 
     const cartButton = document.querySelector(".cart-icon-container");
@@ -265,6 +298,7 @@ function changeQuantity(productId, change) {
         cart = cart.filter(item => item.id !== productId);
     }
 
+    saveCart();
     updateCartUI();
 }
 
