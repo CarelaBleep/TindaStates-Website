@@ -7,35 +7,40 @@ const products = [
     {
         id: 1,
         name: "Trader Joe's Mini Tote - Lavender",
-        price: 630,
+        originalPrice: 630,
+        price: 549,
         image: "img/tj/miniviolet.png",
         category: "trader-joes"
     },
     {
         id: 2,
         name: "Trader Joe's Mini Tote - Pink",
-        price: 630,
+        originalPrice: 630,
+        price: 549,
         image: "img/tj/minipink.png",
         category: "trader-joes"
     },
     {
         id: 3,
         name: "Trader Joe's Mini Tote - Blue",
-        price: 630,
+        originalPrice: 630,
+        price: 549,
         image: "img/tj/miniblue.png",
         category: "trader-joes"
     },
     {
         id: 4,
         name: "Trader Joe's Large Tote - Violet",
-        price: 670,
+        originalPrice: 670,
+        price: 599,
         image: "img/tj/largeviolet.png",
         category: "trader-joes"
     },
     {
         id: 5,
         name: "Trader Joe's Large Tote - Navy",
-        price: 670,
+        originalPrice: 670,
+        price: 599,
         image: "img/tj/largeblue.png",
         category: "trader-joes"
     },
@@ -78,21 +83,24 @@ const products = [
     {
         id: 11,
         name: "Kids' Backpack - Small Blue",
-        price: 950,
+        originalPrice: 1149,
+        price: 899,
         image: "img/kidsbag/smlblue.jpg",
         category: "kids"
     },
     {
         id: 12,
         name: "Kids' Backpack - Blue",
-        price: 1100,
+        originalPrice: 1149,
+        price: 899,
         image: "img/kidsbag/medblue.jpg",
         category: "kids"
     },
     {
         id: 13,
         name: "Kids' Backpack - Camo",
-        price: 1100,
+        originalPrice: 1149,
+        price: 899,
         image: "img/kidsbag/camo.jpg",
         category: "kids"
     },
