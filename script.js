@@ -46,14 +46,14 @@ const products = [
     },
     {
         id: 6,
-        name: "Michael Kors - Beige",
+        name: "Michael Kors Jet Set Crossbody",
         price: 6000,
         image: "img/mk/mkbeige.png",
         category: "mk"
     },
     {
         id: 7,
-        name: "Michael Kors - Black",
+        name: "Michael Kors Jet Set Crossbody Black",
         price: 6000,
         image: "img/mk/mkblk.png",
         soldOut: true,
@@ -61,28 +61,28 @@ const products = [
     },
     {
         id: 8,
-        name: "Michael Kors - Classic",
+        name: "Michael Kors - Classic Medium Backpack",
         price: 6000,
         image: "img/mk/mkbag.png",
         category: "mk"
     },
     {
         id: 9,
-        name: "Michael Kors - Black Leather",
+        name: "Michael Kors Black Leather Crossbody Bag with Tech Attachment Case",
         price: 6000,
         image: "img/mk/mkblack.png",
         category: "mk"
     },
     {
         id: 10,
-        name: "Michael Kors - Moss",
+        name: "Michael Kors Jet Set Crossbody - Moss",
         price: 6000,
         image: "img/mk/mkmoss.png",
         category: "mk"
     },
     {
         id: 11,
-        name: "Kids' Backpack - Small Blue",
+        name: "Crate & Kids Blue 13\"Backpack",
         originalPrice: 1149,
         price: 899,
         image: "img/kidsbag/smlblue.jpg",
@@ -90,7 +90,7 @@ const products = [
     },
     {
         id: 12,
-        name: "Kids' Backpack - Blue",
+        name: "Cat & Jack Dino Camo 17\" Backpack",
         originalPrice: 1149,
         price: 899,
         image: "img/kidsbag/medblue.jpg",
@@ -98,7 +98,7 @@ const products = [
     },
     {
         id: 13,
-        name: "Kids' Backpack - Camo",
+        name: "Children Place Camo 16\"Backpack",
         originalPrice: 1149,
         price: 899,
         image: "img/kidsbag/camo.jpg",
@@ -106,7 +106,7 @@ const products = [
     },
     {
         id: 20,
-        name: "Old Navy Tshirt",
+        name: "Old Navy Tshirt (xs to xl)",
         originalPrice: 379,
         price: 279,
         image: "img/salesale/onsale.jpg",
@@ -114,7 +114,7 @@ const products = [
     },
     {
         id: 14,
-        name: "Gray Shirt",
+        name: "Gray Smokey Bear T-Shirt (M only)",
         originalPrice: 249,
         price: 199,
         image: "img/salesale/graytshirt.jpg",
@@ -122,7 +122,7 @@ const products = [
     },
     {
         id: 15,
-        name: "Light Gray Top",
+        name: "Unisex Long Sleeve Pocket Tees (M only)",
         originalPrice: 399,
         price: 299,
         image: "img/salesale/lgray.jpg",
@@ -130,7 +130,7 @@ const products = [
     },
     {
         id: 16,
-        name: "Light Cream Top",
+        name: "Unisex Long Sleeve Pocket Tees (M only)",
         originalPrice: 399,
         price: 299,
         image: "img/salesale/lcream.jpg",
@@ -146,7 +146,7 @@ const products = [
     },
     {
         id: 18,
-        name: "Black Off-Shoulder Dress",
+        name: "Black Off-Shoulder Dress (S only)",
         originalPrice: 449,
         price: 375,
         image: "img/salesale/offshoulderdressblk.jpg",
@@ -154,7 +154,7 @@ const products = [
     },
     {
         id: 19,
-        name: "Pink Off-Shoulder Dress",
+        name: "Pink Off-Shoulder Dress (S only)",
         originalPrice: 449,
         price: 375,
         image: "img/salesale/offshoulderdresspnk.jpg",
