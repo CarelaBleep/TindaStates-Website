@@ -37,14 +37,6 @@ const products = [
         category: "new-arrivals"
     },
     {
-        id: 29,
-        name: "Girls' Pink Tie-Dye Sundress",
-        price: 279,
-        image: "img/OCTshirt/20261019_172511.jpg",
-        isNew: true,
-        category: "new-arrivals"
-    },
-    {
         id: 30,
         name: "Girls' Rainbow Unicorn T-Shirt",
         price: 199,
@@ -149,6 +141,38 @@ const products = [
         category: "new-arrivals"
     },
     {
+        id: 46,
+        name: "Formula 1 Black Track Shorts",
+        price: 379,
+        image: "img/OCTother/f1M.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 50,
+        name: "Blue Vintage Utility Shorts",
+        price: 279,
+        image: "img/OCTshirt/Blue Vintage Short.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 51,
+        name: "Olive Vintage Utility Shorts",
+        price: 279,
+        image: "img/OCTshirt/Olive Vintage Short.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 52,
+        name: "Beige Vintage Utility Shorts",
+        price: 279,
+        image: "img/OCTshirt/Beige Vintage Short.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
         id: 43,
         name: "Girls' Black Pull-On Skirt",
         price: 279,
@@ -165,34 +189,10 @@ const products = [
         category: "new-arrivals"
     },
     {
-        id: 45,
-        name: "Mocha Utility Shorts",
-        price: 279,
-        image: "img/OCTother/brwnShortsS.jpg",
-        isNew: true,
-        category: "new-arrivals"
-    },
-    {
-        id: 46,
-        name: "Formula 1 Black Track Shorts",
-        price: 379,
-        image: "img/OCTother/f1M.jpg",
-        isNew: true,
-        category: "new-arrivals"
-    },
-    {
         id: 47,
         name: "Double-Knee Black and Gray Leggings",
         price: 299,
         image: "img/OCTother/leggings.jpg",
-        isNew: true,
-        category: "new-arrivals"
-    },
-    {
-        id: 48,
-        name: "Olive Utility Shorts",
-        price: 279,
-        image: "img/OCTother/shortsS.jpg",
         isNew: true,
         category: "new-arrivals"
     },
