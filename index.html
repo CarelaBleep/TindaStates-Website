@@ -73,6 +73,18 @@
     <!-- Product Catalog Grid -->
     <main class="container" id="products">
         <div class="product-section-header">
+            <h2>NEW ARRIVALS</h2>
+            <div class="carousel-controls" aria-label="New arrivals navigation">
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('new-arrivals-product-grid', -1)" aria-label="Previous new arrivals">&lt;</button>
+                <button type="button" class="carousel-button" onclick="scrollProductGroup('new-arrivals-product-grid', 1)" aria-label="Next new arrivals">&gt;</button>
+            </div>
+        </div>
+        <div class="product-carousel">
+        <div class="product-grid" id="new-arrivals-product-grid">
+            <!-- New arrivals will be injected via JavaScript -->
+        </div>
+        </div>
+        <div class="product-section-header">
             <h2>Limited-Time Offers</h2>
             <div class="carousel-controls" aria-label="Limited-time offers navigation">
                 <button type="button" class="carousel-button" onclick="scrollProductGroup('offers-product-grid', -1)" aria-label="Previous offers">&lt;</button>
@@ -85,7 +97,7 @@
         </div>
         </div>
         <div class="product-section-header">
-            <h2>Trader Joe's Pastel Tote Bags</h2>
+            <h2>Trader Joe's Tote Bags</h2>
             <div class="carousel-controls" aria-label="Trader Joe's products navigation">
                 <button type="button" class="carousel-button" onclick="scrollProductGroup('product-grid', -1)" aria-label="Previous products">&lt;</button>
                 <button type="button" class="carousel-button" onclick="scrollProductGroup('product-grid', 1)" aria-label="Next products">&gt;</button>
@@ -121,6 +133,24 @@
         </div>
         </div>
     </main>
+
+    <!-- Product Image Gallery -->
+    <div id="image-gallery-modal" class="image-gallery-modal hidden" role="dialog" aria-modal="true" aria-labelledby="gallery-title" onclick="if (event.target === this) closeImageGallery()">
+        <div class="image-gallery-content">
+            <div class="image-gallery-header">
+                <h3 id="gallery-title">Product image</h3>
+                <button class="gallery-close-btn" type="button" onclick="closeImageGallery()" aria-label="Close image gallery">&times;</button>
+            </div>
+            <div class="image-gallery-viewer">
+                <img id="gallery-image" src="" alt="">
+            </div>
+            <div class="image-gallery-controls" aria-label="Image zoom controls">
+                <button type="button" onclick="updateGalleryZoom(-0.5)" aria-label="Zoom out">−</button>
+                <button id="gallery-zoom-reset" type="button" onclick="resetGalleryZoom()">Reset</button>
+                <button type="button" onclick="updateGalleryZoom(0.5)" aria-label="Zoom in">+</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Shopping Cart Slide-out / Modal -->
     <div id="cart-modal" class="cart-modal hidden">

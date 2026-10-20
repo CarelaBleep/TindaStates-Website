@@ -5,10 +5,242 @@ const FB_PAGE_USERNAME = "tindastates"; // Example: 'ToteShopPH' or '1234567890'
 // --- PRODUCT DATA ---
 const products = [
     {
+        id: 25,
+        name: "Women's Blue Zip-Up Hoodie",
+        price: 549,
+        image: "img/OCTshirt/jacketL.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 26,
+        name: "Girls' Lavender Flutter-Sleeve Top",
+        price: 249,
+        image: "img/OCTshirt/pinkL10-12.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 27,
+        name: "Men's Ivory Linen-Blend Polo",
+        price: 289,
+        image: "img/OCTshirt/npolosmall.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 28,
+        name: "Budweiser Graphic T-Shirt",
+        price: 249,
+        image: "img/OCTshirt/whiteXL.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 29,
+        name: "Girls' Pink Tie-Dye Sundress",
+        price: 279,
+        image: "img/OCTshirt/20261019_172511.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 30,
+        name: "Girls' Rainbow Unicorn T-Shirt",
+        price: 199,
+        image: "img/OCTshirt/bluexl10-14.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 31,
+        name: "Brown Ribbed Cropped Top",
+        price: 249,
+        image: "img/OCTshirt/BrownS.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 32,
+        name: "Lion Graphic Black T-Shirt",
+        price: 249,
+        image: "img/OCTshirt/blkxl.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 33,
+        name: "Pink Tie-Dye Halter Dress",
+        price: 279,
+        image: "img/OCTshirt/halterpink.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 34,
+        name: "Girls' Peach Textured Flutter-Sleeve Top",
+        price: 249,
+        image: "img/OCTshirt/pinkS6-7.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 35,
+        name: "Women's Heather Gray V-Neck Tee",
+        price: 199,
+        image: "img/OCTshirt/vxl.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 36,
+        name: "Women's Mint Ruffle-Sleeve Top",
+        price: 249,
+        image: "img/OCTshirt/topM8.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 37,
+        name: "Classic Heather Gray Crewneck Tee",
+        price: 189,
+        image: "img/OCTshirt/grayxl.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 38,
+        name: "Men's White Dry-fit Stripe Polo",
+        price: 289,
+        image: "img/OCTshirt/dryfitL.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 39,
+        name: "Girls' Gray Ruffle-Sleeve Top",
+        price: 249,
+        image: "img/OCTshirt/grayxl14.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 40,
+        name: "Beige Striped Relaxed T-Shirt",
+        price: 249,
+        image: "img/OCTshirt/stripesL.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 41,
+        name: "Women's Navy Ribbed Flutter-Sleeve Top",
+        price: 249,
+        image: "img/OCTshirt/BluetopM8.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 42,
+        name: "Bright Green Classic T-Shirt",
+        price: 149,
+        image: "img/OCTshirt/greenXL.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 43,
+        name: "Girls' Black Pull-On Skirt",
+        price: 279,
+        image: "img/OCTother/skirtL10-12.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 44,
+        name: "Girls' Cinnamoroll Shorts",
+        price: 249,
+        image: "img/OCTother/bluexs.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 45,
+        name: "Mocha Utility Shorts",
+        price: 279,
+        image: "img/OCTother/brwnShortsS.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 46,
+        name: "Formula 1 Black Track Shorts",
+        price: 379,
+        image: "img/OCTother/f1M.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 47,
+        name: "Double-Knee Black and Gray Leggings",
+        price: 299,
+        image: "img/OCTother/leggings.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 48,
+        name: "Olive Utility Shorts",
+        price: 279,
+        image: "img/OCTother/shortsS.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 49,
+        name: "Women's Black Flare Leggings",
+        price: 249,
+        image: "img/OCTother/FlareM8.jpg",
+        isNew: true,
+        category: "new-arrivals"
+    },
+    {
+        id: 21,
+        name: "Trader Joe's Tote - Blue",
+        price: 549,
+        image: "img/tj/newtjblue.jpg",
+        isNew: true,
+        category: "trader-joes"
+    },
+    {
+        id: 22,
+        name: "Trader Joe's Tote - Brown",
+        price: 549,
+        image: "img/tj/newtjbrown.jpg",
+        isNew: true,
+        category: "trader-joes"
+    },
+    {
+        id: 23,
+        name: "Trader Joe's Tote - Green",
+        price: 549,
+        image: "img/tj/newtjgreen.jpg",
+        isNew: true,
+        category: "trader-joes"
+    },
+    {
+        id: 24,
+        name: "Trader Joe's Tote - Pink",
+        price: 549,
+        image: "img/tj/newtjpink.jpg",
+        isNew: true,
+        category: "trader-joes"
+    },
+    {
         id: 1,
         name: "Trader Joe's Mini Tote - Lavender",
         originalPrice: 630,
-        price: 549,
+        price: 539,
         image: "img/tj/miniviolet.png",
         category: "trader-joes"
     },
@@ -16,7 +248,7 @@ const products = [
         id: 2,
         name: "Trader Joe's Mini Tote - Pink",
         originalPrice: 630,
-        price: 549,
+        price: 539,
         image: "img/tj/minipink.png",
         category: "trader-joes"
     },
@@ -24,7 +256,7 @@ const products = [
         id: 3,
         name: "Trader Joe's Mini Tote - Blue",
         originalPrice: 630,
-        price: 549,
+        price: 539,
         image: "img/tj/miniblue.png",
         category: "trader-joes"
     },
@@ -32,7 +264,7 @@ const products = [
         id: 4,
         name: "Trader Joe's Large Tote - Violet",
         originalPrice: 670,
-        price: 599,
+        price: 579,
         image: "img/tj/largeviolet.png",
         category: "trader-joes"
     },
@@ -40,7 +272,7 @@ const products = [
         id: 5,
         name: "Trader Joe's Large Tote - Navy",
         originalPrice: 670,
-        price: 599,
+        price: 579,
         image: "img/tj/largeblue.png",
         category: "trader-joes"
     },
@@ -214,13 +446,14 @@ function renderProducts(searchTerm = "") {
     );
 
     if (matchingProducts.length === 0) {
-        ["product-grid", "mk-product-grid", "kids-product-grid", "offers-product-grid"].forEach(gridId => {
+        ["new-arrivals-product-grid", "product-grid", "mk-product-grid", "kids-product-grid", "offers-product-grid"].forEach(gridId => {
             document.getElementById(gridId).innerHTML =
                 `<p class="no-results">No products found.</p>`;
         });
         return;
     }
 
+    renderProductGroup("new-arrivals-product-grid", matchingProducts.filter(product => product.category === "new-arrivals"));
     renderProductGroup("product-grid", matchingProducts.filter(product => product.category === "trader-joes"));
     renderProductGroup("mk-product-grid", matchingProducts.filter(product => product.category === "mk"));
     renderProductGroup("kids-product-grid", matchingProducts.filter(product => product.category === "kids"));
@@ -236,7 +469,10 @@ function renderProductGroup(gridId, groupProducts) {
         card.className = "product-card";
         card.innerHTML = `
             <div class="product-img-container">
-                <img src="${product.image}" alt="${product.name}" class="product-img">
+                <button class="product-image-button" type="button" aria-label="View larger product image">
+                    <img src="${product.image}" alt="${product.name}" class="product-img">
+                </button>
+                ${product.isNew ? `<span class="new-badge">NEW</span>` : ""}
                 ${product.soldOut
                     ? `<span class="sold-out-badge">Sold out</span>`
                     : `<button class="quick-add-btn" type="button" onclick="addToCart(${product.id}, this)" aria-label="Add ${product.name} to cart">
@@ -254,6 +490,11 @@ function renderProductGroup(gridId, groupProducts) {
                 </p>
             </div>
         `;
+        const imageButton = card.querySelector(".product-image-button");
+        imageButton.setAttribute("aria-label", `View larger image of ${product.name}`);
+        imageButton.addEventListener("click", () => {
+            openImageGallery(product.image, product.name);
+        });
         grid.appendChild(card);
     });
 }
@@ -315,6 +556,43 @@ function toggleCartModal() {
     const modal = document.getElementById("cart-modal");
     modal.classList.toggle("hidden");
 }
+
+let imageZoom = 1;
+
+function openImageGallery(imageSource, imageAlt) {
+    const modal = document.getElementById("image-gallery-modal");
+    const image = document.getElementById("gallery-image");
+
+    imageZoom = 1;
+    image.src = imageSource;
+    image.alt = imageAlt;
+    image.style.transform = "scale(1)";
+    modal.classList.remove("hidden");
+    document.body.classList.add("modal-open");
+    document.getElementById("gallery-zoom-reset").focus();
+}
+
+function closeImageGallery() {
+    const modal = document.getElementById("image-gallery-modal");
+    modal.classList.add("hidden");
+    document.body.classList.remove("modal-open");
+}
+
+function updateGalleryZoom(change) {
+    imageZoom = Math.min(3, Math.max(1, imageZoom + change));
+    document.getElementById("gallery-image").style.transform = `scale(${imageZoom})`;
+}
+
+function resetGalleryZoom() {
+    imageZoom = 1;
+    document.getElementById("gallery-image").style.transform = "scale(1)";
+}
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+        closeImageGallery();
+    }
+});
 
 // Update Cart View, Badges, and Total
 function updateCartUI() {

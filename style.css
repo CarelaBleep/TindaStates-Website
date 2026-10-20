@@ -705,6 +705,19 @@ body {
     background: #f6e376;
 }
 
+.new-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 5px 9px;
+    border-radius: 4px;
+    background: #ba092d;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
 .sold-out-badge {
     position: absolute;
     right: 14px;
@@ -767,6 +780,120 @@ body {
     color: #fff;
     cursor: not-allowed;
     transform: none;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.product-image-button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.product-image-button:focus-visible {
+    outline: 3px solid #3f9cf3;
+    outline-offset: -3px;
+}
+
+.image-gallery-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.78);
+    z-index: 1100;
+}
+
+.image-gallery-modal.hidden {
+    display: none;
+}
+
+.image-gallery-content {
+    width: min(92vw, 900px);
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.3);
+}
+
+.image-gallery-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.image-gallery-header h3 {
+    font-size: 1rem;
+}
+
+.gallery-close-btn {
+    padding: 0 6px;
+    border: 0;
+    background: transparent;
+    color: #555;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.gallery-close-btn:hover,
+.gallery-close-btn:focus-visible {
+    color: #ba092d;
+}
+
+.image-gallery-viewer {
+    min-height: 300px;
+    height: min(68vh, 650px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    background: #f1f1ef;
+}
+
+.image-gallery-viewer img {
+    width: min(82%, 650px);
+    height: 92%;
+    object-fit: contain;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.image-gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-top: 1px solid #eee;
+}
+
+.image-gallery-controls button {
+    min-width: 42px;
+    min-height: 36px;
+    padding: 6px 12px;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    background: #fff;
+    color: #222;
+    cursor: pointer;
+}
+
+.image-gallery-controls button:hover,
+.image-gallery-controls button:focus-visible {
+    border-color: #ba092d;
+    color: #ba092d;
 }
 
 /* Cart Modal / Drawer */
