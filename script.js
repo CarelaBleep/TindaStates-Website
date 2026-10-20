@@ -15,7 +15,7 @@ const products = [
     {
         id: 26,
         name: "Girls' Lavender Flutter-Sleeve Top",
-        price: 249,
+        price: 199,
         image: "img/OCTshirt/pinkL10-12.jpg",
         isNew: true,
         category: "new-arrivals"
@@ -47,7 +47,7 @@ const products = [
     {
         id: 31,
         name: "Brown Ribbed Cropped Top",
-        price: 249,
+        price: 199,
         image: "img/OCTshirt/BrownS.jpg",
         isNew: true,
         category: "new-arrivals"
@@ -71,7 +71,7 @@ const products = [
     {
         id: 34,
         name: "Girls' Peach Textured Flutter-Sleeve Top",
-        price: 249,
+        price: 199,
         image: "img/OCTshirt/pinkS6-7.jpg",
         isNew: true,
         category: "new-arrivals"
@@ -87,7 +87,7 @@ const products = [
     {
         id: 36,
         name: "Women's Mint Ruffle-Sleeve Top",
-        price: 249,
+        price: 199,
         image: "img/OCTshirt/topM8.jpg",
         isNew: true,
         category: "new-arrivals"
@@ -95,7 +95,7 @@ const products = [
     {
         id: 37,
         name: "Classic Heather Gray Crewneck Tee",
-        price: 189,
+        price: 179,
         image: "img/OCTshirt/grayxl.jpg",
         isNew: true,
         category: "new-arrivals"
@@ -111,7 +111,7 @@ const products = [
     {
         id: 39,
         name: "Girls' Gray Ruffle-Sleeve Top",
-        price: 249,
+        price: 199,
         image: "img/OCTshirt/grayxl14.jpg",
         isNew: true,
         category: "new-arrivals"
@@ -127,7 +127,7 @@ const products = [
     {
         id: 41,
         name: "Women's Navy Ribbed Flutter-Sleeve Top",
-        price: 249,
+        price: 199,
         image: "img/OCTshirt/BluetopM8.jpg",
         isNew: true,
         category: "new-arrivals"
